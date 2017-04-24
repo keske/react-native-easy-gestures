@@ -18,12 +18,14 @@ import Gestures from 'react-native-easy-gestures';
 render () {
   ...
   // Simple example
-  <Gestures
-    onChange={(styles) => {
-      console.log(styles);
-    }}
-  >
-    <View />
+  <Gestures>
+    <Image
+      source={photo}
+      style={{
+        width: 200,
+        height: 300,
+      }}
+    />
   </Gestures>
   ...
 }
@@ -36,22 +38,20 @@ render () {
 
 Prop | Description | Type | Default
 ------ | ------ | ------ | ------
-drag | Should component draggable | Boolean | `true`
-rotate | Should component rotate | Boolean | `true`
-scale | Should component scale | Boolean | `true`
+draggable | Should component drag | Boolean | `true`
+rotatable | Should component rotate | Boolean | `true`
+scalable | Should component scale | Boolean | `true`
 
 ### Style
 
 Prop | Description | Type | Default
 ------ | ------ | ------ | ------
-left | Left | Number | `0`
-top | Top | Number | `0`
-rotate | Transform rotate | Number | `0`
-scale | Transform scale | Number | `1`
+styles | React Native styles | Object | {}
 
 ### Callbacks
 
-Prop | Description | Type | Default
------- | ------ | ------ | ------
-onChange(styles) | Get styles (left, top, rotate angle and scale) | Function | `undefined`
-onRelease() | Callback when drag, rotate or scale is release | Function | `undefined`
+Prop | Description | Type
+------ | ------ | ------
+onChange(styles) | Get styles (left, top, rotate angle and scale) | Function
+onRelease() | Callback when drag, rotate or scale is release | Function
+onStart() | Callback when drag, rotate or scale is start | Function
