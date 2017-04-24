@@ -1,0 +1,3 @@
+rootProject.name = 'GesturesExample'
+
+include ':app'
