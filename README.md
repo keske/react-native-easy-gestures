@@ -10,6 +10,7 @@ React Native Gestures. Support: Drag, Scale and Rotate a Component.
 1. [Props](#props)
 1. [Style](#style)
 1. [Callbacks](#callbacks)
+1. [Development](#development)
 
 ## Usage
 
@@ -60,3 +61,14 @@ Prop | Description | Type
 onChange(styles) | Get styles (left, top, rotate angle and scale) | Function
 onRelease() | Callback when drag, rotate or scale is release | Function
 onStart() | Callback when drag, rotate or scale is start | Function
+
+# Development
+
+```
+$ git clone https://github.com/keske/react-native-easy-gestures.git
+$ cd react-native-easy-gestures
+$ npm install
+$ react-native run-ios
+```
+
+MIT

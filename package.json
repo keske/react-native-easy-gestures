@@ -1,6 +1,6 @@
 {
   "name": "react-native-easy-gestures",
-  "version": "0.0.1-pre-alpha",
+  "version": "0.0.2-pre-alpha",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
