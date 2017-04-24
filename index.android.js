@@ -8,7 +8,6 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Image,
-  StyleSheet,
   View,
 } from 'react-native';
 
@@ -18,19 +17,28 @@ import Gestures from './lib/';
 // Photo
 const photo = require('./static/photo.jpg');
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
-
 export default class GesturesExample extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Gestures>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Gestures
+          onStart={() => {
+            console.log('Start');
+          }}
+          onChange={(styles) => {
+            console.log('Change');
+            console.log(styles);
+          }}
+          onRelease={() => {
+            console.log('Release');
+          }}
+        >
           <Image
             source={photo}
             style={{

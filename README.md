@@ -1,5 +1,6 @@
 # React Native Easy Gestures
 
+Important: This is Pre-Alpha version
 React Native Gestures. Support: Drag, Scale and Rotate a Component.
 
 ## Table of contents
