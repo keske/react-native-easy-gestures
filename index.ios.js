@@ -28,16 +28,16 @@ export default class GesturesExample extends Component {
         }}
       >
         <Gestures
-          onStart={() => {
-            console.log('Start');
-          }}
-          onChange={(styles) => {
-            console.log('Change');
-            console.log(styles);
-          }}
-          onRelease={() => {
-            console.log('Release');
-          }}
+          // onStart={() => {
+          //   console.log('Start');
+          // }}
+          // onChange={(styles) => {
+          //   console.log('Change');
+          //   console.log(styles);
+          // }}
+          // onRelease={() => {
+          //   console.log('Release');
+          // }}
         >
           <Image
             source={photo}
