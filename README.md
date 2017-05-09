@@ -1,16 +1,6 @@
 # React Native Easy Gestures
 
-Important: This is Pre-Alpha version
-
 React Native Gestures. Support: Drag, Scale and Rotate a Component.
-
-## Table of contents
-
-1. [Usage](#usage)
-1. [Props](#props)
-1. [Style](#style)
-1. [Callbacks](#callbacks)
-1. [Development](#development)
 
 ## Usage
 
@@ -25,6 +15,26 @@ render () {
   ...
   // Simple example
   <Gestures>
+    <Image
+      source={photo}
+      style={{
+        width: 200,
+        height: 300,
+      }}
+    />
+  </Gestures>
+  ...
+  // Only drag example
+  <Gestures
+    rotatable={false}
+    scalable={false}
+    onChange={(styles) => {
+      console.log(styles);
+    }}
+    onRelease={() => {
+      console.log('On Release');
+    }}
+  >
     <Image
       source={photo}
       style={{

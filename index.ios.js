@@ -1,21 +1,21 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * React Native Easy Gestures Example
+ * https://github.com/keske/react-native-easy-gestures
+ *
  * @flow
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Image,
-  View,
-} from 'react-native';
+import { AppRegistry, Image, View } from 'react-native';
 
 // Component
 import Gestures from './lib/';
 
 // Photo
 const photo = require('./static/photo.jpg');
+
+// Disable yellow box
+console.disableYellowBox = true;
 
 export default class GesturesExample extends Component {
   render() {
@@ -27,23 +27,12 @@ export default class GesturesExample extends Component {
           alignItems: 'center',
         }}
       >
-        <Gestures
-          // onStart={() => {
-          //   console.log('Start');
-          // }}
-          // onChange={(styles) => {
-          //   console.log('Change');
-          //   console.log(styles);
-          // }}
-          // onRelease={() => {
-          //   console.log('Release');
-          // }}
-        >
+        <Gestures>
           <Image
             source={photo}
             style={{
-              width: 200,
-              height: 300,
+              width: 300,
+              height: 400,
             }}
           />
         </Gestures>
