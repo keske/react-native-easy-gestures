@@ -2,6 +2,8 @@
 
 React Native Gestures. Support: Drag, Scale and Rotate a Component.
 
+![example](https://raw.githubusercontent.com/keske/react-native-easy-gestures/master/static/gestures.gif)
+
 ## Usage
 
 ```
