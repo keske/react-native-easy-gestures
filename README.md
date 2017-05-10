@@ -68,9 +68,9 @@ styles | React Native styles | Object | {}
 
 Prop | Description | Type
 ------ | ------ | ------
-onChange(styles) | Get styles (left, top, rotate angle and scale) | Function
-onRelease() | Callback when drag, rotate or scale is release | Function
-onStart() | Callback when drag, rotate or scale is start | Function
+onChange(styles, event) | Get styles (left, top, rotate angle and scale) | Function
+onRelease(event) | Callback when drag, rotate or scale is release | Function
+onStart(event) | Callback when drag, rotate or scale is start | Function
 
 # Development
 
