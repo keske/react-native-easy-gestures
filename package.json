@@ -1,6 +1,6 @@
 {
   "name": "react-native-easy-gestures",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -17,7 +17,7 @@
     "gestures",
     "drag",
     "scale",
-    "rotste"
+    "rotate"
   ],
   "author": "Andrey Keske (https://github.com/keske/)",
   "contributors": [

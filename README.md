@@ -70,7 +70,7 @@ styles | React Native styles | Object | {}
 
 Prop | Description | Type
 ------ | ------ | ------
-onChange(styles, event) | Get styles (left, top, rotate angle and scale) | Function
+onChange(styles, event) | Get component styles (top, left transform, etc) | Function
 onRelease(event) | Callback when drag, rotate or scale is release | Function
 onStart(event) | Callback when drag, rotate or scale is start | Function
 
