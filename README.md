@@ -59,6 +59,8 @@ Prop | Description | Type | Default
 draggable | Should component drag | Boolean | `true`
 rotatable | Should component rotate | Boolean | `true`
 scalable | Should component scale | Boolean | `true`
+minScale | Minimum value of scale | Number | `0.33`
+maxScale | Maximum value of scale | Number | `2`
 
 ### Style
 
