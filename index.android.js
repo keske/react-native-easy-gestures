@@ -27,12 +27,25 @@ export default class GesturesExample extends Component {
           alignItems: 'center',
         }}
       >
-        <Gestures>
+        <Gestures
+          onStart={(event, styles) => {
+            console.log('Start');
+            console.log(styles);
+          }}
+          onChange={(event, styles) => {
+            console.log('Change');
+            console.log(styles);
+          }}
+          onRelease={(event, styles) => {
+            console.log('Release');
+            console.log(styles);
+          }}
+        >
           <Image
             source={photo}
             style={{
-              width: 200,
-              height: 300,
+              width: 300,
+              height: 400,
             }}
           />
         </Gestures>
