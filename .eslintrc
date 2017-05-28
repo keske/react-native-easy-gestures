@@ -4,17 +4,10 @@
   "env": {
     "node": true
   },
-  "globals": {
-    connect: true,
-    window: true,
-    __CLIENT__: true,
-    __DEVELOPMENT__: true,
-    __INITIAL_STATE__: true,
-
-  },
   "rules": {
     "max-len": 0,
     "import/extensions": 0,
+    "no-restricted-properties": 0,
     "import/no-unresolved": 0,
     "import/parser": 0,
     "no-console": 0,
