@@ -12,10 +12,11 @@ $ npm install --save react-native-easy-gestures
 
 ```javascript
 import Gestures from 'react-native-easy-gestures';
-...
-render () {
-  ...
-  // Simple example
+```
+
+Simple example:
+
+```javascript
   <Gestures>
     <Image
       source={photo}
@@ -25,16 +26,16 @@ render () {
       }}
     />
   </Gestures>
-  ...
-  // Only drag example
+```
+
+Only drag example witn `onChange` event:
+
+```javascript
   <Gestures
     rotatable={false}
     scalable={false}
     onChange={(event, styles) => {
       console.log(styles);
-    }}
-    onRelease={() => {
-      console.log('On Release');
     }}
   >
     <Image
@@ -45,9 +46,6 @@ render () {
       }}
     />
   </Gestures>
-  ...
-}
-
 ```
 
 ## Props
