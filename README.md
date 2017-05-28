@@ -30,7 +30,7 @@ render () {
   <Gestures
     rotatable={false}
     scalable={false}
-    onChange={(styles) => {
+    onChange={(event, styles) => {
       console.log(styles);
     }}
     onRelease={() => {
@@ -72,9 +72,9 @@ styles | React Native styles | Object | {}
 
 Prop | Description | Type
 ------ | ------ | ------
-onChange(styles, event) | Get component styles (top, left transform, etc) | Function
-onRelease(event) | Callback when drag, rotate or scale are finished | Function
-onStart(event) | Callback when drag, rotate or scale are started | Function
+onChange(event, styles) | Get component styles (top, left transform, etc) | Function
+onRelease(event, styles) | Callback when drag, rotate or scale are finished | Function
+onStart(event, styles) | Callback when drag, rotate or scale are started | Function
 
 # Development
 
