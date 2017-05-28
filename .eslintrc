@@ -15,6 +15,7 @@
   "rules": {
     "max-len": 0,
     "import/extensions": 0,
+    "no-restricted-properties": 0,
     "import/no-unresolved": 0,
     "import/parser": 0,
     "no-console": 0,
