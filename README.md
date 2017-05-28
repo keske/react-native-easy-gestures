@@ -30,7 +30,7 @@ render () {
   <Gestures
     rotatable={false}
     scalable={false}
-    onChange={(styles) => {
+    onChange={(event, styles) => {
       console.log(styles);
     }}
     onRelease={() => {
