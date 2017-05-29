@@ -1,6 +1,6 @@
 {
   "name": "react-native-easy-gestures",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -22,7 +22,8 @@
   "author": "Andrey Keske (https://github.com/keske/)",
   "contributors": [
     "Maxim (https://github.com/anorudes)",
-    "Hammad Jutt (https://github.com/hammadj)"
+    "Hammad Jutt (https://github.com/hammadj)",
+    "David Alexander Bjerremose (https://github.com/DaBs)"
   ],
   "license": "MIT",
   "devDependencies": {
