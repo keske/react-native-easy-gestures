@@ -59,6 +59,8 @@ rotatable | Should component rotate | Boolean | `true`
 scalable | Should component scale | Boolean | `true`
 minScale | Minimum value of scale | Number | `0.33`
 maxScale | Maximum value of scale | Number | `2`
+rotate | Value to set for rotation transform | String | `0deg`
+scale | Value to set for scale transform | Number | `1`
 
 ### Style
 
