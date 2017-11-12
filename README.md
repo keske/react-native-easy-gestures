@@ -64,11 +64,9 @@ Only drag example witn `onChange` event:
 
 Prop | Description | Type | Default
 ------ | ------ | ------ | ------
-draggable | Should component drag | Boolean | `true`
+draggable | Should component drag | Boolean of Object | `true` or { x: true, y: true }
 rotatable | Should component rotate | Boolean | `true`
-scalable | Should component scale | Boolean | `true`
-minScale | Minimum value of scale | Number | `0.33`
-maxScale | Maximum value of scale | Number | `2`
+scalable | Should component scale | Boolean or Object | `true` or { min: 0.33, max: 2}
 
 ### Style
 
