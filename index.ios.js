@@ -28,17 +28,21 @@ export default class GesturesExample extends Component {
         }}
       >
         <Gestures
+          scalable={{
+            min: 0,
+            max: 2,
+          }}
           onStart={(event, styles) => {
-            console.log('Start');
-            console.log(styles);
+            // console.log('Start');
+            // console.log(styles);
           }}
           onChange={(event, styles) => {
-            console.log('Change');
-            console.log(styles);
+            // console.log('Change');
+            // console.log(styles);
           }}
           onRelease={(event, styles) => {
-            console.log('Release');
-            console.log(styles);
+            // console.log('Release');
+            // console.log(styles);
           }}
         >
           <Image
