@@ -14,9 +14,6 @@ import Gestures from './lib/';
 // Photo
 const photo = require('./static/photo.jpg');
 
-// Disable yellow box
-console.disableYellowBox = true;
-
 export default class GesturesExample extends Component {
   render() {
     return (
