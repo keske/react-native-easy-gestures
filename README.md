@@ -97,7 +97,7 @@ $ npm install
 $ react-native run-ios
 ```
 
-### ToDo
+# TODO
 
 - [ ] Rotate step, ex: every 90deg
 - [ ] Guidelines and center snap
