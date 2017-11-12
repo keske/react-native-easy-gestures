@@ -32,6 +32,10 @@ export default class GesturesExample extends Component {
             min: 0,
             max: 2,
           }}
+          draggable={{
+            x: true,
+            y: false,
+          }}
           onStart={(event, styles) => {
             // console.log('Start');
             // console.log(styles);
