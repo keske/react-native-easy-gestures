@@ -50,6 +50,35 @@ import Gestures from 'react-native-easy-gestures';
     }}
   />
 </Gestures>
+
+/**
+ * Another example:
+ * Drag only on x axis;
+ * Scale from 0.1 to 7;
+ * Do not rotate;
+ * On release callback;
+ */
+<Gestures
+  draggable={{
+    y: false,
+  }}
+  scalable={{
+    min: 0.1,
+    max: 7,
+  }}
+  rotate={false}
+  onRelease={(event, styles) => {
+    console.log(styles);
+  }}
+>
+  <Image
+    source={photo}
+    style={{
+      width,
+      height,
+    }}
+  />
+</Gestures>
 ```
 
 ## Props
