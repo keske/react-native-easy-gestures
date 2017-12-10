@@ -66,7 +66,7 @@ import Gestures from 'react-native-easy-gestures';
     min: 0.1,
     max: 7,
   }}
-  rotate={false}
+  rotatable={false}
   onRelease={(event, styles) => {
     console.log(styles);
   }}
