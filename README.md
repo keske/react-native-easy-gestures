@@ -118,6 +118,18 @@ onEnd?(event: object, styles: object): void
 ```
 
 ```javascript
+onMultyTouchStart?(event: object, styles: object): void
+```
+
+```javascript
+onMultyTouchChange?(event: object, styles: object): void
+```
+
+```javascript
+onMultyTouchEnd?(event: object, styles: object): void
+```
+
+```javascript
 onRotateStart?(event: object, styles: object): void
 ```
 
