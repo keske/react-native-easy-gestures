@@ -13,19 +13,54 @@ const example = () => (
       alignItems: 'center',
     }}
   >
-    
-
     <Gestures
-      draggable={{ x: true, y: true }}
-      scalable={{ min: 0.1, max: 200 }}
-      rotatable={true}
-      onRelease={(event, styles) => { console.log(styles); }}
+      onStart={(event, styles) => {
+        // console.log('On Start');
+      }}
+      onChange={(event, styles) => {
+        // console.log('On change');
+      }}
+      onEnd={(event, styles) => {
+        // console.log('On End');
+      }}
+      onMultyTouchStart={(event, styles) => {
+        // console.log('On MultyTouch Start');
+      }}
+      onMultyTouchChange={(event, styles) => {
+        // console.log('On MultyTouch change');
+      }}
+      onMultyTouchEnd={(event, styles) => {
+        // console.log('On MultyTouch End');
+      }}
+      onRotateStart={(event, styles) => {
+        // console.log('On Rotate Start');
+      }}
+      onRotateChange={(event, styles) => {
+        // console.log('On Rotate Change');
+      }}
+      onRotateEnd={(event, styles) => {
+        // console.log('On Rotate End');
+      }}
+      onScaleStart={(event, styles) => {
+        // console.log('On Scale Start');
+      }}
+      onScaleChange={(event, styles) => {
+        // console.log('On Scale Change');
+      }}
+      onScaleEnd={(event, styles) => {
+        // console.log('On Scale End');
+      }}
     >
       <Image
         source={photo}
-        style={{ width: 200, height: 200, resizeMode: "contain" }}
-        />
-      </Gestures>
+        style={{
+          width: 300,
+          height: 400,
+        }}
+      />
+    </Gestures>
+
+    <Gestures draggable={true} scalable={true} rotatable={true} onRelease={(event, styles) => { console.log(styles); }} > <Image source={photo} style={{ width: 200, height: 200, resizeMode: "contain" }} /> </Gestures>
 
 
   </View>
