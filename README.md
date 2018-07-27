@@ -67,7 +67,7 @@ import Gestures from 'react-native-easy-gestures';
     max: 7,
   }}
   rotatable={false}
-  onRelease={(event, styles) => {
+  onEnd={(event, styles) => {
     console.log(styles);
   }}
 >
@@ -114,7 +114,31 @@ onChange?(event: object, styles: object): void
 ```
 
 ```javascript
-onRelease?(event: object, styles: object): void
+onEnd?(event: object, styles: object): void
+```
+
+```javascript
+onRotateStart?(event: object, styles: object): void
+```
+
+```javascript
+onRotateChange?(event: object, styles: object): void
+```
+
+```javascript
+onRotateEnd?(event: object, styles: object): void
+```
+
+```javascript
+onScaleStart?(event: object, styles: object): void
+```
+
+```javascript
+onScaleChange?(event: object, styles: object): void
+```
+
+```javascript
+onScaleEnd?(event: object, styles: object): void
 ```
 
 # Development
