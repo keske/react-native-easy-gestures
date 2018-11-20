@@ -25,7 +25,6 @@ export default class Example extends Component {
           }}
           onEnd={(event, styles) => {
             // console.log('On End');
-            this.gestures.reset();
           }}
           onMultyTouchStart={(event, styles) => {
             // console.log('On MultyTouch Start');
