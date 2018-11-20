@@ -55,8 +55,8 @@ export default class Example extends Component {
             // console.log('On Scale End');
           }}
           style={{
-            left: 100,
-            top: 100,
+            left: 0,
+            top: 0,
           }}
         >
           <Image

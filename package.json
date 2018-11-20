@@ -45,6 +45,6 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "ramda": "^0.26.0",
+    "ramda": "^0.26.0"
   }
 }
