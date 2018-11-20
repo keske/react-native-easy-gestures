@@ -100,7 +100,7 @@ scalable?: boolean = true | object = { min?: number = 0.33, max?: number = 2 }
 ### Styles
 
 ```javascript
-styles?: object // React Native styles
+style?: object // RN Styles
 ```
 
 ### Callbacks
@@ -151,6 +151,16 @@ onScaleChange?(event: object, styles: object): void
 
 ```javascript
 onScaleEnd?(event: object, styles: object): void
+```
+
+### How to reset styles
+
+```javascript
+<Gestures
+  ref={(c) => { this.gestures = c; }}
+  onEnd={(event, styles) => {
+    this.gestures.reset();
+  }}
 ```
 
 # Development

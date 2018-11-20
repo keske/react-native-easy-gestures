@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image, View } from 'react-native';
 
-import Gestures from './lib/';
+import Gestures from './lib';
 
 const photo = require('./static/photo.jpg');
 
@@ -53,6 +53,10 @@ export default class Example extends Component {
           }}
           onScaleEnd={(event, styles) => {
             // console.log('On Scale End');
+          }}
+          style={{
+            left: 100,
+            top: 100,
           }}
         >
           <Image
