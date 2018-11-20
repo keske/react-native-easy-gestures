@@ -1,3 +1,3 @@
-import Gestures from './lib/';
+import Gestures from './lib';
 
 export default Gestures;
