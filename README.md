@@ -159,7 +159,9 @@ onScaleEnd?(event: object, styles: object): void
 <Gestures
   ref={(c) => { this.gestures = c; }}
   onEnd={(event, styles) => {
-    this.gestures.reset();
+    this.gestures.reset((prevStyles) => {
+      console.log(prevStyles);
+    });
   }}
 ```
 
