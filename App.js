@@ -28,6 +28,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import photo from './static/photo.jpg'
+
 const App: () => Node = () => {
 
   return (
@@ -43,7 +45,7 @@ const App: () => Node = () => {
           }}
         >
           <Image
-            source={require('./static/photo.jpg')}
+            source={photo}
             style={{
               width,
               height,
