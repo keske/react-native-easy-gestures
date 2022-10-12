@@ -1,3 +1,9 @@
+/**
+ * @format
+ */
+import {AppRegistry} from 'react-native';
+import {name as appName} from './app.json';
 import Gestures from './lib';
+import App from './App';
 
-export default Gestures;
+AppRegistry.registerComponent(appName, () => App);
