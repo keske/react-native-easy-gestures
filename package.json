@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.68.0",
+    "react-native": "0.68.2",
     "prop-types": "^15.6.0",
     "ramda": "^0.26.0"	
   },
